@@ -1,0 +1,50 @@
+/******************************/
+/** FONTS */
+/******************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+/******************************/
+/** VARIABLES */
+/******************************/
+
+:root {
+  /*? COLORS */
+
+  /*? FONTS */
+  --ff-primary: 'Roboto', sans-serif;
+  --ff-secondary: 'Open Sans', sans-serif;
+  --fw-default: 400;
+  --fw-bold: 700;
+}
+
+/******************************/
+/** GLOBAL STYLES */
+/******************************/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-default);
+  line-height: 1.5;
+}
+
+/******************************/
+/** HEADER*/
+/******************************/
+
+.header {
+  background-color: #fff;
+}
