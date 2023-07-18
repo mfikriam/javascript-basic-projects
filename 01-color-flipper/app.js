@@ -1,16 +1,3 @@
-//* /////////////////////////////////////////////////////////
-//* DOM Variables
-const btnHex = document.querySelector('#hex');
-const btnRgb = document.querySelector('#rgb');
-
-//* /////////////////////////////////////////////////////////
-//* Event Listener
-console.log(randomColor());
-console.log(randomColor('hex'));
-console.log(randomColor('rgb'));
-
-//* /////////////////////////////////////////////////////////
-//* Functions
 function randomHexa() {
   return Math.floor(Math.random() * 256)
     .toString(16)

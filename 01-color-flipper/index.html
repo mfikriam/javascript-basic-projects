@@ -6,26 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Color Flipper</title>
 
-    <!-- Styles -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="header-container">
-        <h1 class="heading-primary">color flipper</h1>
+    <div class="container">
+      <header class="header">
+        <h1 class="heading-1">color flipper</h1>
         <div>
-          <button class="btn-header" type="button" id="hex">hex</button>
-          <button class="btn-header" type="button" id="rgb">rgb</button>
+          <span class="hex active">hex</span>
+          <span class="rgb">rgb</span>
         </div>
-      </div>
-    </header>
+      </header>
 
-    <main class="main">
-      <p class="display">background color : <span>#f1f5f8</span></p>
-      <button type="button" id="changeColor">click me</button>
-    </main>
+      <main class="main">
+        <p class="display">background color : <span class="color">#f1f5f8</span></p>
+        <button type="button" class="btn" id="btn">click me</button>
+      </main>
+    </div>
 
-    <!-- JavaScript -->
     <script src="app.js"></script>
   </body>
 </html>
