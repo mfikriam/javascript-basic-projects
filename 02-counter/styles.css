@@ -27,6 +27,8 @@
 
   /*? OTHERS */
   --ltr-spacing: 0.25rem;
+  --radius: 0.5rem;
+  --transition: all 0.3s linear;
 }
 
 /******************************/
@@ -52,5 +54,50 @@ body {
   font-weight: var(--fw-default);
   background-color: var(--clr-grey-1);
   color: var(--clr-grey-2);
-  line-height: 1.5;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+/******************************/
+/** MAIN */
+/******************************/
+
+.heading-1 {
+  text-transform: capitalize;
+  font-size: 6rem;
+  letter-spacing: var(--ltr-spacing);
+  font-family: var(--ff-primary);
+}
+
+.value {
+  font-size: 10rem;
+  font-weight: bold;
+  margin: 3rem 0;
+}
+
+.btn-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.btn {
+  letter-spacing: 0.25rem;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px solid var(--clr-black);
+  border-radius: var(--radius);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: var(--clr-white);
+  background-color: var(--clr-black);
 }
