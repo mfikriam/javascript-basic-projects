@@ -1,0 +1,56 @@
+/******************************/
+/** FONTS */
+/******************************/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap');
+
+/******************************/
+/** VARIABLES */
+/******************************/
+
+:root {
+  /*? COLORS */
+  --clr-primary: #f1f5f8;
+  --clr-secondary: #49a6e9;
+  --clr-white: #fff;
+  --clr-black: #222;
+  --clr-grey-1: #f1f5f8;
+  --clr-grey-2: #444;
+
+  /*? FONTS */
+  --ff-primary: 'Roboto', sans-serif;
+  --ff-secondary: 'Open Sans', sans-serif;
+  --fw-default: 400;
+
+  /*? FONT SIZES */
+  --fs-default: 62.5%;
+
+  /*? OTHERS */
+  --ltr-spacing: 0.25rem;
+}
+
+/******************************/
+/** GLOBAL STYLES */
+/******************************/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  /* ? font-size: 10px; */
+  font-size: var(--fs-default);
+}
+
+body {
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-default);
+  background-color: var(--clr-grey-1);
+  color: var(--clr-grey-2);
+  line-height: 1.5;
+}
