@@ -32,6 +32,14 @@
 }
 
 /******************************/
+/** RESPONSIVE BREAKPOINTS */
+/******************************/
+
+/* 
+  ? Small   : 450px (28.125em)
+*/
+
+/******************************/
 /** GLOBAL STYLES */
 /******************************/
 
@@ -47,6 +55,14 @@ html {
   box-sizing: border-box;
   /* ? font-size: 10px; */
   font-size: var(--fs-default);
+}
+
+/*? 450px / 16 = 28.125em */
+@media only screen and (max-width: 28.125em) {
+  html {
+    /* ? font-size: 7px; */
+    font-size: 43.75%;
+  }
 }
 
 body {
