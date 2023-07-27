@@ -33,7 +33,53 @@ const reviews = [
 ];
 
 //************** SELECTING ELEMENTS **************/
+const imageEl = document.querySelector('.img-person');
+const authorEl = document.querySelector('.author');
+const jobEl = document.querySelector('.job');
+const infoEl = document.querySelector('.info');
+
+const prevBtnEl = document.querySelector('.btn-prev');
+const nextBtnEl = document.querySelector('.btn-next');
+const randomBtnEl = document.querySelector('.btn-random');
+
+//************** FUNCTIONS **************/
+const showPerson = function (id) {
+  const person = reviews[id];
+  imageEl.src = person.img;
+  authorEl.textContent = person.name;
+  jobEl.textContent = person.job;
+  infoEl.textContent = person.text;
+};
 
 //************** STARTING CONDITIONS **************/
+let currentItem = 0;
 
-//************** BUTTONS FUNCTIONALITY **************/
+window.addEventListener('DOMContentLoaded', () => showPerson(currentItem));
+
+//************** BUTTON PREV FUNCTIONALITY **************/
+prevBtnEl.addEventListener('click', () => {
+  console.log('Prev');
+  currentItem--;
+  if (currentItem < 0) {
+    currentItem = reviews.length - 1;
+  }
+  showPerson(currentItem);
+});
+
+//************** BUTTON NEXT FUNCTIONALITY **************/
+nextBtnEl.addEventListener('click', () => {
+  console.log('Next');
+  currentItem++;
+  if (currentItem > reviews.length - 1) {
+    currentItem = 0;
+  }
+  showPerson(currentItem);
+});
+
+//************** BUTTON RANDOM FUNCTIONALITY **************/
+randomBtnEl.addEventListener('click', () => {
+  console.log('Random');
+
+  currentItem = Math.trunc(Math.random() * reviews.length);
+  showPerson(currentItem);
+});
