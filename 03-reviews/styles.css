@@ -31,6 +31,16 @@
 }
 
 /******************************/
+/** RESPONSIVE BREAKPOINTS */
+/******************************/
+
+/* 
+  ? Large   : 750px (46.875em)
+  ? Medium  : 600px (37.5em)
+  ? Small   : 425px (26.5625em)
+*/
+
+/******************************/
 /** GLOBAL STYLES */
 /******************************/
 
@@ -46,6 +56,22 @@ html {
   box-sizing: border-box;
   /* ? font-size: 10px; */
   font-size: var(--fs-default);
+}
+
+/*? Large */
+@media only screen and (max-width: 46.875em) {
+  html {
+    /* ? font-size: 8px; */
+    font-size: 50%;
+  }
+}
+
+/*? Small */
+@media only screen and (max-width: 26.5625em) {
+  html {
+    /* ? font-size: 6px; */
+    font-size: 37.5%;
+  }
 }
 
 body {
@@ -183,6 +209,13 @@ body {
   line-height: 1.5;
   color: var(--clr-secondary);
   margin-bottom: 1.5rem;
+}
+
+/*? Medium */
+@media only screen and (max-width: 37.5em) {
+  .info {
+    width: 40rem;
+  }
 }
 
 .btn-container {
